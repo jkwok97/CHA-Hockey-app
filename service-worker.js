@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/CHA-Hockey-app/precache-manifest.350abc376a2343d924af3f94f3241064.js"
+  "/CHA-Hockey-app/precache-manifest.af45b01f24c5f6eb9a73f98a5b0768d7.js"
 );
 
 workbox.clientsClaim();
