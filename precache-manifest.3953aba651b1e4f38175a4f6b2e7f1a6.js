@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/CHA-Hockey-app/static/media/Hound4.715e5df6.jpg"
   },
   {
-    "revision": "68887c3393298b095996",
-    "url": "/CHA-Hockey-app/static/css/main.a8a64411.chunk.css"
+    "revision": "f5d0dcb6a1c56d6da1b9",
+    "url": "/CHA-Hockey-app/static/css/main.817eae05.chunk.css"
   },
   {
     "revision": "6debcf90a2bd3d418c77",
@@ -56,8 +56,8 @@ self.__precacheManifest = [
     "url": "/CHA-Hockey-app/static/media/oilbarons3.260a9c65.jpg"
   },
   {
-    "revision": "68887c3393298b095996",
-    "url": "/CHA-Hockey-app/static/js/main.68887c33.chunk.js"
+    "revision": "f5d0dcb6a1c56d6da1b9",
+    "url": "/CHA-Hockey-app/static/js/main.f5d0dcb6.chunk.js"
   },
   {
     "revision": "68735f726df67673e1599a868e5369cb",
@@ -108,7 +108,7 @@ self.__precacheManifest = [
     "url": "/CHA-Hockey-app/static/media/Green Jackets.84cb3ffe.jpg"
   },
   {
-    "revision": "9b4a6c3c83c77263b9c6ddef269b2267",
+    "revision": "74626d20033afb77a51d8bca6bca700c",
     "url": "/CHA-Hockey-app/index.html"
   }
 ];
