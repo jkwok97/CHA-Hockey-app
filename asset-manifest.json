@@ -1,7 +1,7 @@
 {
-  "main.css": "/CHA-Hockey-app/static/css/main.3add26d8.chunk.css",
-  "main.js": "/CHA-Hockey-app/static/js/main.6cbc8558.chunk.js",
-  "main.js.map": "/CHA-Hockey-app/static/js/main.6cbc8558.chunk.js.map",
+  "main.css": "/CHA-Hockey-app/static/css/main.9a1bd604.chunk.css",
+  "main.js": "/CHA-Hockey-app/static/js/main.da1fb63b.chunk.js",
+  "main.js.map": "/CHA-Hockey-app/static/js/main.da1fb63b.chunk.js.map",
   "static/js/1.6debcf90.chunk.js": "/CHA-Hockey-app/static/js/1.6debcf90.chunk.js",
   "static/js/1.6debcf90.chunk.js.map": "/CHA-Hockey-app/static/js/1.6debcf90.chunk.js.map",
   "runtime~main.js": "/CHA-Hockey-app/static/js/runtime~main.2c87a61c.js",
@@ -29,8 +29,8 @@
   "static/media/rays.jpg": "/CHA-Hockey-app/static/media/rays.1fb337bc.jpg",
   "static/media/voodoo2.jpg": "/CHA-Hockey-app/static/media/voodoo2.577470e5.jpg",
   "static/media/Green Jackets.jpg": "/CHA-Hockey-app/static/media/Green Jackets.84cb3ffe.jpg",
-  "static/css/main.3add26d8.chunk.css.map": "/CHA-Hockey-app/static/css/main.3add26d8.chunk.css.map",
+  "static/css/main.9a1bd604.chunk.css.map": "/CHA-Hockey-app/static/css/main.9a1bd604.chunk.css.map",
   "index.html": "/CHA-Hockey-app/index.html",
-  "precache-manifest.341d6db9c976e58909daef9b756331cb.js": "/CHA-Hockey-app/precache-manifest.341d6db9c976e58909daef9b756331cb.js",
+  "precache-manifest.350abc376a2343d924af3f94f3241064.js": "/CHA-Hockey-app/precache-manifest.350abc376a2343d924af3f94f3241064.js",
   "service-worker.js": "/CHA-Hockey-app/service-worker.js"
 }
