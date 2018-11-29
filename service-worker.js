@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/cha-app/precache-manifest.3fcff53ff8ccfa91b461f0f01d89dd01.js"
+  "/CHA-Hockey-app/precache-manifest.341d6db9c976e58909daef9b756331cb.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/cha-app/index.html", {
+workbox.routing.registerNavigationRoute("/CHA-Hockey-app/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
