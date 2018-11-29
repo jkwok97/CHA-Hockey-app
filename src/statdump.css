@@ -1,0 +1,122 @@
+/* ------------------------ */
+/* Basic Setup
+/* ------------------------ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: : #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300px;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+/* ------------------------ */
+/* Test Text
+/* ------------------------ */
+
+.sd:first,
+.sd:before {
+    content: 'Team Rankings';
+    font-size: 30pt;
+    font-weight: 100;
+    color: #fff;
+    margin: auto;
+    text-align: center;
+    font-family: 'Lato';
+    display: inline-block;
+}
+
+/* ------------------------ */
+/* Links
+/* ------------------------ */
+
+a:active, a:link, a:visited {
+    background: transparent;
+    color: #000066;
+    font-weight: bold;
+    text-decoration: underline;
+}
+a:hover {
+    background: transparent;
+    color: #000066;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* ------------------------ */
+/* Body
+/* ------------------------ */
+
+
+table.sd {
+    margin:auto;
+}
+
+.sd p {
+    display:inline-block;
+    margin-top: 25px;
+    margin-left: 0;
+}
+
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(img/High+Res+Hockey+5.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+    color: #000000;
+    font-family: Lato;
+    font-size: 9pt;
+    scrollbar-arrow-color: #ccccff;
+    scrollbar-base-color: #000066;
+    margin:auto;
+}
+.sd td {
+    color: #ffffff;
+    font-family: Lato;
+    font-size: 14pt;
+    padding-right: 8px;
+    padding-left: 8px;
+    padding-top: 2px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.sdh1 {
+    color: #ffffff;
+    font-size: 20pt;
+    font-family: Lato;
+    font-weight: bold;
+}
+.sdh2 {
+    color: #ffffff;
+    font-size: 18pt;
+    font-family: Lato;
+    font-weight: bold;
+    text-align: center;
+    margin-left; 10%;
+}
+
+/* ------------------------ */
+/* media sizing
+/* ------------------------ */
+
+@media only screen and (max-width: 480px) {
+
+body { font-size: 6pt; }
+    
+.sd td { font-size: 10pt; }
+    
+.sdh1 { font-size: 14pt; }
+
+.sdh2 { font-size: 12pt; }
+    
+}
