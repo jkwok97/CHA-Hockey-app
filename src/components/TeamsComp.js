@@ -150,7 +150,7 @@ class TeamsComp extends Component {
                 <iframe className="embed-responsive-item" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTpSpdaAz_Joer_bPx1jtFG3v59VsDaIaQ0FARGIWF7R4M83t73foELctvvEt2RK6kDXDw2c4Fiz_F6/pubhtml?gid=33&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
         } else if (this.state.display === 'wichita') {
             toShow = 
-                <iframe className="embed-responsive-item" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTpSpdaAz_Joer_bPx1jtFG3v59VsDaIaQ0FARGIWF7R4M83t73foELctvvEt2RK6kDXDw2c4Fiz_F6/pubhtml?gid=21&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+                <iframe className="embed-responsive-item scroll-wrapper" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTpSpdaAz_Joer_bPx1jtFG3v59VsDaIaQ0FARGIWF7R4M83t73foELctvvEt2RK6kDXDw2c4Fiz_F6/pubhtml?gid=21&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
         }
         return (
             <div className="container-teams">
@@ -175,7 +175,7 @@ class TeamsComp extends Component {
                 <img src={require('../img/voodoo2.jpg')} alt="Louisiana Voodoo" id="louisiana" onClick={this.onClickLou}></img>
                 <img src={require('../img/Green Jackets.jpg')} alt="Augusta Green Jackets" id="augusta" onClick={this.onClickAug}></img>
             
-                <div className="embed-responsive embed-responsive-16by9 scroll-wrapper"> {toShow} </div>  
+                <div className="embed-responsive embed-responsive-16by9 scroll-wrapper" id="frame"> {toShow} </div>  
             </div>  
         );
     }
