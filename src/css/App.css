@@ -1,3 +1,7 @@
+* {
+  outline: none;
+}
+
 .App {
   text-align: center;
 }
@@ -14,17 +18,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
 }
 
 .body,
 html {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url("./img/High+Res+Hockey+5.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url("../img/High+Res+Hockey+5.jpg");
   background-size: cover;
   background-position: center;
   height: 95vh;
@@ -37,7 +35,7 @@ h1 {
   margin-bottom: 20px;
   color: #fff;
   font-size: 240%;
-  font-weight: 300;
+  font-weight: 100;
   text-transform: uppercase;
   letter-spacing: 1px;
   word-spacing: 4px;
@@ -53,53 +51,38 @@ h5 {
   font-size: 75%;
 }
 
-.scroll-wrapper {
-	-webkit-overflow-scrolling: touch !important;
-    overflow-x: auto !important;
-    overflow-y: auto !important;
-}
-
 /* --------------------------------------------------------- */
 /* BUTTONS */
 /* --------------------------------------------------------- */
 
-.btn:link,
-.btn:visited {
-    display: inline-block;
+.btn-ghost:link,
+.btn-ghost:visited,
+.btn-ghost:focus,
+button {
+    display: inline-flex;
+    justify-content: space-around;
     padding: 10px 30px;
     font-weight: 300;
     text-decoration: none;
-    border-radius: 200px;
     transition: background-color 0.5s, border 0.5s, color 0.5s;
-    animation-duration: 2s;
-    animation-delay: 1s;
-}
-
-.btn-ghost:link,
-.btn-ghost:visited {
-    border: 1.5px solid #ecf0f1;
+    margin-right: 10px;
+    border: 1px solid #ecf0f1;
+    border-radius: 200px;
     color: #ecf0f1;
-    margin-right: 20px;
+    background: transparent;
     animation-duration: 2s;
     animation-delay: 1s;
-}
-
-.btn:hover,
-.btn:active {
-   background-color: #d63031;
-}
-
-.btn-full:hover,
-.btn-full:active {
-    border: 1.5px solid #d63031;       
+    outline: none;
+    cursor: pointer;
 }
 
 .btn-ghost:hover,
 .btn-ghost:active {
-    border: 1.5px solid #d63031;
+    border: 1px solid #d63031;
     color: #fff;
     animation-duration: 2s;
     animation-delay: 1s;
+    background-color: #d63031;
 }
 
 .row {
@@ -122,43 +105,15 @@ h5 {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  height: 50vh;
+  height: 20vh;
   animation-duration: 2s;
   animation-delay: 1s;
 }
 
 /* --------------------------------------------------------- */
-/* Teams */
+/* MEDIA */
 /* --------------------------------------------------------- */
 
-.container-teams {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-end;
-  height: 40vh;
-}
-
-.container-teams img {
-  width: 130px;
-  height: 130px;
-  margin: 1.5px;
-  animation: zoomInDown 3s;
-  transform: scale(1.0);
-  transition: transform 0.75s, opacity 0.75s;
-  opacity: 0.75;
-}
-
-.container-teams img:hover {
-  transform: scale(1.1);
-  opacity: 1;
-  cursor: pointer;
-}
-
-.embed-responsive {
-  width: 90%;
-  margin: 30px;
-}
 
 @keyframes App-logo-spin {
   from {
@@ -173,48 +128,21 @@ h5 {
         
   .row { padding: 0 2%; }
   section { padding: 0px 0; }
-  .container-teams img {
-    width: 140px;
-    height: 140px;
-    margin: 2px;
-  }
-  .rink-text-box {
-    height: 35vh;
-  } 
 }
 
 @media only screen and (max-width: 1366px) {
         
   .row { padding: 0 2%; }
   section { padding: 0px 0; }
-  .container-teams img {
-    width: 120px;
-    height: 120px;
-    margin: 4px;
-  }
-  .rink-text-box {
-    height: 35vh;
-  } 
 }
 
 @media only screen and (max-width: 1024px) {
         
   .row { padding: 0 2%; }
   section { padding: 0px 0; }
-  .container-teams img {
-    width: 100px;
-    height: 100px;
-    margin: 1px;
-  }
-  .rink-text-box {
-    height: 15vh;
-  }
-  .App-header {
-    min-height: 3vh;
-  }
-  .App-logo {
-    height: 3vmin;
-  }
+  .rink-text-box { height: 10vh; }
+  .App-header { min-height: 3vh; }
+  .App-logo { height: 3vmin; }
   .logo {
     height: 40px;
     margin-top: 10px;
@@ -226,39 +154,24 @@ h5 {
   }
 }
 
-@media only screen and (max-width: 812px) {
+@media only screen and (max-width: 823px) {
         
   .row { padding: 0 2%; }
   section { padding: 0px 0; }
-  .container-teams img {
-    width: 75px;
-    height: 75px;
-    margin: 2px;
-  }
-  .rink-text-box {
-    height: 25vh;
-  }
-  .App-header {
-    min-height: 5vh;
-  }
-  .App-logo {
-    height: 5vmin;
-  }
+  .App-header { min-height: 5vh; }
+  .App-logo { height: 5vmin; }
   h1 {
     margin-bottom: 10px;
     font-size: 190%;
   }
-  .btn:link,
-  .btn:visited {
-    padding: 5px 15px;
-  }
   .btn-ghost:link,
-  .btn-ghost:visited {
+  .btn-ghost:visited,
+  button {
+    padding: 5px 15px;
     margin-right: 10px;
   }
-  .btn {
-    font-size: .75rem;
-  }
+
+  .btn { font-size: .75rem; }
   .logo {
     height: 30px;
     margin-top: 10px;
@@ -268,13 +181,33 @@ h5 {
     margin-top: 10px;
     font-size: 25%;
   }
-  #frame {
-    transform: scale(.75);
+}
+
+@media only screen and (max-width: 812px) {
+        
+  .row { padding: 0 2%; }
+  section { padding: 0px 0; }
+  .App-header { min-height: 5vh; }
+  .App-logo { height: 5vmin; }
+  h1 {
+    margin-bottom: 10px;
+    font-size: 190%;
   }
-  .embed-responsive {
-    height: 325%;
-    margin: -50px;
-    width: 125%;
+  .btn-ghost:link,
+  .btn-ghost:visited,
+  button {
+    padding: 5px 15px;
+    margin-right: 10px;
+  }
+  .btn { font-size: .75rem; }
+  .logo {
+    height: 30px;
+    margin-top: 10px;
+  }
+  h5 {
+    margin-left: 5px;
+    margin-top: 10px;
+    font-size: 25%;
   }
 }
 
@@ -282,20 +215,8 @@ h5 {
         
   .row { padding: 0 2%; }
   section { padding: 0px 0; }
-  .container-teams img {
-    width: 70px;
-    height: 70px;
-    margin: 2px;
-  }
-  .rink-text-box {
-    height: 10vh;
-  }
-  .App-header {
-    min-height: 3vh;
-  }
-  .App-logo {
-    height: 3vmin;
-  }
+  .App-header { min-height: 3vh; }
+  .App-logo { height: 3vmin; }
   h1 {
     margin-bottom: 10px;
     font-size: 190%;
@@ -308,9 +229,7 @@ h5 {
   .btn-ghost:visited {
     margin-right: 10px;
   }
-  .btn {
-    font-size: .75rem;
-  }
+  .btn { font-size: .75rem; }
   .logo {
     height: 35px;
     margin-top: 10px;
@@ -320,34 +239,14 @@ h5 {
     margin-top: 10px;
     font-size: 50%;
   }
-  #frame {
-    transform: scale(.75);
-  }
-  .embed-responsive {
-    height: 200%;
-    margin: -50px;
-    width: 125%;
-  }
 }
 
 @media only screen and (max-width: 736px) {
         
   .row { padding: 0 2%; }
   section { padding: 0px 0; }
-  .container-teams img {
-    width: 68px;
-    height: 68px;
-    margin: 2px;
-  }
-  .rink-text-box {
-    height: 15vh;
-  }
-  .App-header {
-    min-height: 5vh;
-  }
-  .App-logo {
-    height: 5vmin;
-  }
+  .App-header { min-height: 5vh; }
+  .App-logo { height: 5vmin; }
   h1 {
     margin-bottom: 10px;
     font-size: 190%;
@@ -365,9 +264,7 @@ h5 {
   .btn-ghost:active {
     border: 1.25px solid #d63031;
   }
-  .btn {
-    font-size: .75rem;
-  }
+  .btn { font-size: .75rem; }
   .logo {
     height: 25px;
     margin-top: 10px;
@@ -377,44 +274,22 @@ h5 {
     margin-top: 10px;
     font-size: 25%;
   }
-  #frame {
-    transform: scale(.75);
-  }
-  .embed-responsive {
-    height: 325%;
-    margin: -50px;
-    width: 125%;
-  }
 }
 
 @media only screen and (max-width: 667px) {
         
   .row { padding: 0 2%; }
   section { padding: 0px 0; }
-  .container-teams img {
-    width: 62px;
-    height: 62px;
-    margin: 2px;
-  }
-  .rink-text-box {
-    height: 35vh;
-  }
-  .App-header {
-    min-height: 5vh;
-  }
-  .App-logo {
-    height: 5vmin;
-  }
+  .App-header { min-height: 5vh; }
+  .App-logo { height: 5vmin; }
   h1 {
     margin-bottom: 10px;
     font-size: 175%;
   }
-  .btn:link,
-  .btn:visited {
-    padding: 3px 10px;
-  }
   .btn-ghost:link,
-  .btn-ghost:visited {
+  .btn-ghost:visited,
+  button {
+    padding: 3px 10px;
     margin-right: 10px;
     border: 1px solid #ecf0f1;
   }
@@ -422,9 +297,40 @@ h5 {
   .btn-ghost:active {
     border: 1px solid #d63031;
   }
-  .btn {
-    font-size: .75rem;
+  .btn { font-size: .75rem; }
+  .logo {
+    height: 25px;
+    margin-top: 10px;
   }
+  h5 {
+    margin-left: 5px;
+    margin-top: 10px;
+    font-size: 25%;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+        
+  .row { padding: 0 2%; }
+  section { padding: 0px 0; }
+  .App-header { min-height: 5vh; }
+  .App-logo { height: 5vmin; }
+  h1 {
+    margin-bottom: 10px;
+    font-size: 175%;
+  }
+  .btn-ghost:link,
+  .btn-ghost:visited,
+  button {
+    padding: 3px 10px;
+    margin-right: 10px;
+    border: 1px solid #ecf0f1;
+  }
+  .btn-ghost:hover,
+  .btn-ghost:active {
+    border: 1px solid #d63031;
+  }
+  .btn { font-size: .75rem; }
   .logo {
     height: 25px;
     margin-top: 10px;
@@ -443,33 +349,22 @@ h5 {
     height: 5vh;
   }
   section { padding: 0px 0; }
-  .container-teams img {
-    width: 74px;
-    height: 74px;
-    margin: 2px;
-  }
   .rink-text-box {
-    height: 15vh;
     flex-wrap: wrap;
     align-content: flex-start;
   }
-  .App-header {
-    min-height: 4vh;
-  }
-  .App-logo {
-    height: 4vmin;
-  }
+  .App-header { min-height: 4vh; }
+  .App-logo { height: 4vmin; }
   h1 {
     margin-bottom: 10px;
-    font-size: 150%;
-  }
-  .btn:link,
-  .btn:visited {
-    padding: 3px 10px;
-    margin-bottom: 10px;
+    font-size: 135%;
+    font-weight: 200;
   }
   .btn-ghost:link,
-  .btn-ghost:visited {
+  .btn-ghost:visited,
+  button {
+    padding: 3px 10px;
+    margin-bottom: 10px;
     margin-right: 5px;
     border: 1px solid #ecf0f1;
   }
@@ -477,9 +372,7 @@ h5 {
   .btn-ghost:active {
     border: 1px solid #d63031;
   }
-  .btn {
-    font-size: .75rem;
-  }
+  .btn { font-size: .75rem; }
   .logo {
     height: 20px;
     margin-top: 10px;
@@ -488,13 +381,6 @@ h5 {
     margin-left: 5px;
     margin-top: 10px;
     font-size: 25%;
-  }
-  #frame {
-    transform: scale(.75);
-  }
-  .embed-responsive {
-    height: 250%;
-    margin: -70px;
   }
 }
 
@@ -502,38 +388,25 @@ h5 {
         
   .row { padding: 0 2%; }
   section { padding: 0px 0; }
-  .container-teams img {
-    width: 70px;
-    height: 70px;
-    margin: 2px;
-  }
   .rink-text-box {
-    height: 15vh;
     flex-wrap: wrap;
     align-content: flex-start;
   }
-  .App-header {
-    min-height: 5vh;
-  }
-  .App-logo {
-    height: 5vmin;
-  }
+  .App-header { min-height: 5vh; }
+  .App-logo { height: 5vmin; }
   h1 {
     margin-bottom: 10px;
     font-size: 150%;
   }
   .btn:link,
-  .btn:visited {
+  .btn:visited,
+  button {
     padding: 3px 10px;
     margin-bottom: 5px;
-  }
-  .btn-ghost:link,
-  .btn-ghost:visited {
     margin-right: 5px;
   }
-  .btn {
-    font-size: .75rem;
-  }
+
+  .btn { font-size: .75rem; }
   .logo {
     height: 20px;
     margin-top: 10px;
@@ -542,8 +415,5 @@ h5 {
     margin-left: 5px;
     margin-top: 10px;
     font-size: 25%;
-  }
-  .embed-responsive {
-    height: 200%;
   }
 }

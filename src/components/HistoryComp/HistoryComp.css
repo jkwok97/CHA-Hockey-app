@@ -1,0 +1,54 @@
+.history-categories {
+    display: flex;
+    justify-content: space-evenly;
+}
+.container-history,
+.container-draftpicks {
+    display: block;
+    color:white;
+    cursor: pointer;
+    justify-content: center;
+}
+
+table {
+    border-collapse: collapse;
+    border-radius: 10px;
+    width: 50%;
+    margin: 0 auto;
+}
+table.center {
+    margin-left: 0 auto;
+}
+
+tr, th {
+    font-weight: 300;
+}
+  
+td, th {
+    border-bottom: 1px solid #dddddd;
+    text-align: center;
+    padding: 10px 10px;
+}
+  
+tr:hover {
+    color: rgb(59, 59, 59);
+    background-color: #dddddd;
+}
+
+.container-history h3 {
+    font-weight: 200;
+}
+
+#libertyCup,
+#drafts {
+    height: 350px;
+    width: 300px;
+    box-shadow: 0 0 50px lightsteelblue;
+}
+
+#hallTitle,
+#pickTitle {
+    padding-bottom: 10px;
+    font-weight: 200;
+}
+

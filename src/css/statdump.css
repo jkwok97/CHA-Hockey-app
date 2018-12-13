@@ -9,7 +9,7 @@
 }
 
 html {
-    background-color: : #fff;
+    background-color: #fff;
     color: #555;
     font-family: 'Lato', 'Arial', sans-serif;
     font-weight: 300px;
@@ -102,7 +102,7 @@ body {
     font-family: Lato;
     font-weight: bold;
     text-align: center;
-    margin-left; 10%;
+    margin-left: 10%;
 }
 
 /* ------------------------ */
