@@ -15,7 +15,17 @@ table {
     border-radius: 10px;
     width: 50%;
     margin: 0 auto;
+    cursor: default;
 }
+
+table.draftTable {
+    border-collapse: collapse;
+    border-radius: 10px;
+    width: 80%;
+    margin: 0 auto;
+    cursor: default;
+}
+
 table.center {
     margin-left: 0 auto;
 }
@@ -35,7 +45,8 @@ tr:hover {
     background-color: #dddddd;
 }
 
-.container-history h3 {
+.container-history h3,
+.container-draftpicks h3 {
     font-weight: 200;
 }
 
@@ -50,5 +61,28 @@ tr:hover {
 #pickTitle {
     padding-bottom: 10px;
     font-weight: 200;
+}
+
+#draft-year-overlay,
+#draft-round-overlay {
+    position: fixed;
+    display: none;
+    width: 25%;
+    height: 25%;
+    top: 35%;
+    left: 37%;
+    right: 35%;
+    bottom: 35%;
+    border-radius: 20px;
+    box-shadow: 0 0 50px lightsteelblue;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 100;
+    cursor: pointer;
+  }
+
+.draft-year-button {
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 5px;
 }
 

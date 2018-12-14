@@ -1,31 +1,68 @@
 import React, { Component } from 'react';
 import './HistoryComp.css'
+import DraftTableComp from '../DraftTableComp/DraftTableComp';
 
 class HistoryComp extends Component {
     constructor() {
         super()
         this.state = {
-          display: '',
-          champions: []
+          display: 'categories',
+          champions: [],
+          drafts: []
         }
     }
 
-    componentDidMount() {
+    componentDidMount = () => {
+        fetch(`http://localhost:3000/drafts`)
+          .then(response => response.json())
+          .then(data => this.setState({drafts: data}))
+          .catch(err => console.log(err,'error'))
+    }
+
+    onClickTrophy = () => {
+        this.setState({display: 'champions'});
         fetch(`http://localhost:3000/champions`)
           .then(response => response.json())
           .then(data => this.setState({champions: data}))
           .catch(err => console.log(err,'error'))
     }
 
-    onClickTrophy = () => {
-        this.setState({display: 'champions'});
+    onClickDrafts = () => {
+        this.setState({display: 'drafts'});
+    }
+
+    removeOverlay = (event) => {
+        document.getElementById("draft-year-overlay").style.display = "none";
+        document.getElementById("draft-round-overlay").style.display = "none";
+    }
+
+    pickDraftYear = () => {
+        document.getElementById("draft-year-overlay").style.display = "block";
+    }
+
+    pickDraftRound = () => {
+        document.getElementById("draft-round-overlay").style.display = "block";
     }
 
     render() {
-        if (this.state.display === 'champions') {
+        if (this.state.display === 'categories' ) {
+            return (
+                <div className="history-categories">
+                    <div className="container-history">
+                        <h3 id="hallTitle">CHA Hall Of Champions</h3>
+                        <img src={require('./libertycup.jpg')} alt="trophy" onClick={this.onClickTrophy} id="libertyCup"></img>
+                    </div>
+                    <div className="container-draftpicks">
+                        <h3 id="pickTitle">CHA Past DraftPicks</h3>
+                        <img src={require('./Drafts.jpg')} alt="trophy" onClick={this.onClickDrafts} id="drafts"></img>
+                    </div>
+                </div>
+            );
+        }
+        else if (this.state.display === 'champions') {
             return (
                 <div className="container-history">
-                    <h3>CHA Hall Of Champions</h3>
+                    <h3 onClick={this.onClickDrafts}>CHA Hall Of Champions</h3>
                         <table className="center">
                             <tbody>
                                 <tr>
@@ -46,20 +83,14 @@ class HistoryComp extends Component {
                         </table> 
                 </div>
             )
-        } else {
+        } else if (this.state.display === 'drafts') { 
             return (
-                <div className="history-categories">
-                    <div className="container-history">
-                        <h3 id="hallTitle">CHA Hall Of Champions</h3>
-                        <img src={require('./libertycup.jpg')} alt="trophy" onClick={this.onClickTrophy} id="libertyCup"></img><br></br>
-                    </div>
-                    <div className="container-draftpicks">
-                        <h3 id="pickTitle">CHA Past DraftPicks</h3>
-                        <img src={require('./Drafts.jpg')} alt="trophy" onClick={this.onClickTrophy} id="drafts"></img><br></br>
-                    </div>
+                <div className="container-draftpicks">
+                    <h3 onClick={this.onClickTrophy}>CHA Drafts</h3>
+                    <DraftTableComp drafts={this.state.drafts}/>
                 </div>
-            );
-        }
+            )
+        } 
     }
 }
 

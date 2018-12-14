@@ -1,0 +1,32 @@
+*** NHL API endpoint to grab Pavel Bure's stats for 1993/94 ***
+
+https://statsapi.web.nhl.com/api/v1/people/8455738/stats/?stats=statsSingleSeason&season=19931994
+
+{
+  "copyright" : "NHL and the NHL Shield are registered trademarks of the National Hockey League. NHL and NHL team marks are the property of the NHL and its teams. © NHL 2018. All Rights Reserved.",
+  "stats" : [ {
+    "type" : {
+      "displayName" : "statsSingleSeason"
+    },
+    "splits" : [ {
+      "season" : "19931994",
+      "stat" : {
+        "assists" : 47,
+        "goals" : 60,
+        "pim" : 86,
+        "shots" : 374,
+        "games" : 76,
+        "powerPlayGoals" : 25,
+        "powerPlayPoints" : 43,
+        "penaltyMinutes" : "86",
+        "shotPct" : 16.0,
+        "gameWinningGoals" : 9,
+        "overTimeGoals" : 1,
+        "shortHandedGoals" : 4,
+        "shortHandedPoints" : 6,
+        "plusMinus" : 1,
+        "points" : 107
+      }
+    } ]
+  } ]
+}
