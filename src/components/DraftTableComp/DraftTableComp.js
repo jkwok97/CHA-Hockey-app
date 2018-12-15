@@ -16,6 +16,7 @@ class DraftTableComp extends React.Component {
 
   render() {
     const { data } = this.state;
+    console.log(this.props.drafts)
     return (
       <div>
         <ReactTable

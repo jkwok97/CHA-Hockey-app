@@ -8,9 +8,9 @@ const range = len => {
 };
 
 const chaDraft = () => {
-        this.props.drafts.map((draft, i) => {
+        this.props.drafts.map((draft, i) => { 
         return {
-            draftYear: draft.draft_year,
+            draftYear: draft.jeff,
             round: draft.round,
             number: draft.number,
             team_name: draft.team,
