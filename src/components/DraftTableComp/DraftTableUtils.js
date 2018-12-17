@@ -7,24 +7,24 @@ const range = len => {
   return arr;
 };
 
-const chaDraft = () => {
-        this.props.drafts.map((draft, i) => { 
+const chaDraft = (drafts) => { 
         return {
-            draftYear: draft.jeff,
-            round: draft.round,
-            number: draft.number,
-            team_name: draft.team,
-            player_name: draft.player_name,
-            player_pos: draft.player_pos,
+            draftYear: drafts.draft_year,
+            round: drafts.round,
+            number: drafts.number,
+            team_name: drafts.team,
+            player_name: drafts.player_name,
+            player_pos: drafts.player_pos,
         }
-    })
 }
 
-export function makeData(len = 5553) {
-  return range(len).map(d => {
-    return {
-      ...chaDraft(),
-      children: range(10).map(chaDraft)
-    };
-  });
+export function makeData(d) {
+        console.log(d.drafts[0].draft_year)
+        console.log(d.drafts)
+        return range(d.drafts).map(d => {
+            return {
+              ...chaDraft(d),
+              children: range(10).map(chaDraft(d))
+            };
+        });
 }

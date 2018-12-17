@@ -9,14 +9,14 @@ import "react-table/react-table.css";
 class DraftTableComp extends React.Component {
   constructor(props) {
     super(props);
+    this.props = props
     this.state = {
-        // data: makeData(),
+        data: this.props.drafts,
     };
   }
 
   render() {
     const { data } = this.state;
-    console.log(this.props.drafts)
     return (
       <div>
         <ReactTable
@@ -26,17 +26,21 @@ class DraftTableComp extends React.Component {
             String(row[filter.id]) === filter.value}
           columns={[
             {
+              Header: "click on headers to sort or type to filter",
               columns: [
                 {
                   Header: "Draft Year",
-                  accessor: "draftYear",
-                  filterMethod: (filter, row) =>
-                    row[filter.id].startsWith(filter.value) &&
-                    row[filter.id].endsWith(filter.value)
+                  id: "draftYear",
+                  maxWidth: 150,
+                  accessor: d => d.draft_year,
+                  filterMethod: (filter, rows) =>
+                    matchSorter(rows, filter.value, { keys: ["draftYear"] }),
+                  filterAll: true
                 },
                 {
                   Header: "Round",
                   id: "round",
+                  maxWidth: 100,
                   accessor: d => d.round,
                   filterMethod: (filter, rows) =>
                     matchSorter(rows, filter.value, { keys: ["round"] }),
@@ -45,6 +49,7 @@ class DraftTableComp extends React.Component {
                 {
                     Header: "Number",
                     id: "number",
+                    maxWidth: 100,
                     accessor: d => d.number,
                     filterMethod: (filter, rows) =>
                         matchSorter(rows, filter.value, { keys: ["number"] }),
@@ -53,7 +58,7 @@ class DraftTableComp extends React.Component {
                 {
                     Header: "Team",
                     id: "team_name",
-                    accessor: d => d.team_name,
+                    accessor: d => d.team,
                     filterMethod: (filter, rows) =>
                         matchSorter(rows, filter.value, { keys: ["team_name"] }),
                     filterAll: true
@@ -69,6 +74,7 @@ class DraftTableComp extends React.Component {
                 {
                     Header: "Position",
                     id: "player_pos",
+                    maxWidth: 200,
                     accessor: d => d.player_pos,
                     filterMethod: (filter, rows) =>
                         matchSorter(rows, filter.value, { keys: ["player_pos"] }),
@@ -78,6 +84,9 @@ class DraftTableComp extends React.Component {
             }
           ]}
           defaultPageSize={10}
+          style={{
+            height: "70vh"
+          }}
           className="-striped -highlight"
         />
       </div>

@@ -16,6 +16,7 @@ table {
     width: 50%;
     margin: 0 auto;
     cursor: default;
+    color: #dddddd;
 }
 
 table.draftTable {
@@ -34,7 +35,8 @@ tr, th {
     font-weight: 300;
 }
   
-td, th {
+td, th,
+.ReactTable .rt-td {
     border-bottom: 1px solid #dddddd;
     text-align: center;
     padding: 10px 10px;
@@ -84,5 +86,10 @@ tr:hover {
     border-radius: 5px;
     padding: 5px 10px;
     margin: 5px;
+}
+
+.ReactTable .-pagination .-btn {
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
 }
 
