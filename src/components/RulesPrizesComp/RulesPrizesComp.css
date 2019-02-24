@@ -1,3 +1,144 @@
 .container-rulesPrizes {
     color:white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.container-rules-individual {
+    margin: 20px;
+    width: 200px;
+    justify-content: center;
+    box-shadow: 0 0 50px lightsteelblue;
+    border-radius: 50px;
+    cursor: pointer;
+    border: .5px solid lightsteelblue;
+    transition: background-color 0.5s, border 0.5s, color 0.5s, box-shadow 0.5s;
+}
+
+.rules-p {
+    padding-bottom: 5px;
+}
+
+.container-rules-individual:hover,
+.container-rules-individual:active {
+    animation-duration: 2s;
+    animation-delay: 1s;
+    color: #d63031;
+    box-shadow: 0 0 50px #d63031;
+    border: .5px solid #d63031;
+}
+
+img {
+    color: white;
+    height: 75px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+#winnings-overlay,
+#equal-overlay,
+#playoff-overlay,
+#draft-overlay,
+#goalie-overlay,
+#player-overlay,
+#roster-overlay,
+#waiver-overlay {
+    position: fixed;
+    display: none;
+    width: 80%;
+    height: 80%;
+    top: 10%;
+    left: 10%;
+    right: 10%;
+    bottom: 10%;
+    border-radius: 20px;
+    box-shadow: 0 0 30px lightsteelblue;
+    background-color: rgba(0, 0, 0, 0.90);
+    z-index: 100;
+    cursor: pointer;
+    color:white;
+  }
+
+#roster-overlay {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url("./img/howe.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#winnings-overlay {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url("./img/oilers-old.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#equal-overlay {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url("./img/bure.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#playoff-overlay {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url("./img/gretzky.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#draft-overlay {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url("./img/sidney-crosby-mario-lemieux.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#goalie-overlay {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),url("./img/brodeur.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#player-overlay {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url("./img/orr.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#waiver-overlay {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),url("./img/lidstrom.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#winnings,
+#per,
+#per-playoff,
+#rules-goalie,
+#rules-roster,
+#rules-waiver {
+    display: inline-block;
+    margin: 5%;
+    width: 70%;
+    text-indent: -20px;
+    text-align: left;
+}
+
+#rules-draft,
+#rules-player {
+    display: inline-block;
+    margin: 5%;
+    width: 70%;
+    text-align: left;
+}
+
+.rules-title {
+    padding: 5px;
+    border-bottom: 1px solid white;
 }

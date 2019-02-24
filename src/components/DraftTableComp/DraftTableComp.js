@@ -1,14 +1,11 @@
 import React from "react";
-// import { makeData } from "./DraftTableUtils";
 import matchSorter from 'match-sorter'
 import ReactTable from "react-table";
 import "react-table/react-table.css";
 
-
-
 class DraftTableComp extends React.Component {
   constructor(props) {
-    super(props);
+    super();
     this.props = props
     this.state = {
         data: this.props.drafts,
@@ -41,7 +38,7 @@ class DraftTableComp extends React.Component {
                   Header: "Round",
                   id: "round",
                   maxWidth: 100,
-                  accessor: d => d.round,
+                  accessor: d => d.round_num,
                   filterMethod: (filter, rows) =>
                     matchSorter(rows, filter.value, { keys: ["round"] }),
                   filterAll: true
@@ -50,7 +47,7 @@ class DraftTableComp extends React.Component {
                     Header: "Number",
                     id: "number",
                     maxWidth: 100,
-                    accessor: d => d.number,
+                    accessor: d => d.number_num,
                     filterMethod: (filter, rows) =>
                         matchSorter(rows, filter.value, { keys: ["number"] }),
                     filterAll: true

@@ -31,31 +31,26 @@ class HistoryComp extends Component {
         this.setState({display: 'drafts'});
     }
 
-    removeOverlay = (event) => {
-        document.getElementById("draft-year-overlay").style.display = "none";
-        document.getElementById("draft-round-overlay").style.display = "none";
-    }
-
-    pickDraftYear = () => {
-        document.getElementById("draft-year-overlay").style.display = "block";
-    }
-
-    pickDraftRound = () => {
-        document.getElementById("draft-round-overlay").style.display = "block";
-    }
+    // onClickRecords = () => {
+    //     this.setState({display: 'records'});
+    // }
 
     render() {
         if (this.state.display === 'categories' ) {
             return (
                 <div className="history-categories">
                     <div className="container-history">
-                        <h3 id="hallTitle">CHA Hall Of Champions</h3>
+                        <h3 id="title">CHA Hall Of Champions</h3>
                         <img src={require('./libertycup.jpg')} alt="trophy" onClick={this.onClickTrophy} id="libertyCup"></img>
                     </div>
                     <div className="container-draftpicks">
-                        <h3 id="pickTitle">CHA Past DraftPicks</h3>
-                        <img src={require('./Drafts.jpg')} alt="trophy" onClick={this.onClickDrafts} id="drafts"></img>
+                        <h3 id="title">CHA Past DraftPicks</h3>
+                        <img src={require('./Drafts.jpg')} alt="drafts" onClick={this.onClickDrafts} id="drafts"></img>
                     </div>
+                    {/* <div className="container-records">
+                        <h3 id="title">CHA Record Books</h3>
+                        <img src={require('./recordBook.jpg')} alt="record-book" onClick={this.onClickRecords} id="records"></img>
+                    </div> */}
                 </div>
             );
         }
@@ -71,11 +66,11 @@ class HistoryComp extends Component {
                                     <th>Owner</th>
                                 </tr>
                                     {
-                                    this.state.champions.reverse().map((champ, i) => {
+                                    this.state.champions.map((champ, i) => {
                                         return <tr key={champ.id}>
                                                 <td key={champ.id}>{champ.year_won}</td>
                                                 <td>{champ.team_name}</td>
-                                                <td>{champ.owner}</td>
+                                                <td>{champ.owner_name}</td>
                                                 </tr>
                                     })
                                     }
@@ -90,7 +85,13 @@ class HistoryComp extends Component {
                     <DraftTableComp drafts={this.state.drafts}/>
                 </div>
             )
-        } 
+        } else if (this.state.display === 'records') {
+            return (
+                <div>
+                    Hello World
+                </div>
+            )
+        }
     }
 }
 

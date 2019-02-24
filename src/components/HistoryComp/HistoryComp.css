@@ -3,7 +3,8 @@
     justify-content: space-evenly;
 }
 .container-history,
-.container-draftpicks {
+.container-draftpicks,
+.container-records {
     display: block;
     color:white;
     cursor: pointer;
@@ -16,7 +17,6 @@ table {
     width: 50%;
     margin: 0 auto;
     cursor: default;
-    color: #dddddd;
 }
 
 table.draftTable {
@@ -53,14 +53,14 @@ tr:hover {
 }
 
 #libertyCup,
-#drafts {
+#drafts,
+#records {
     height: 350px;
     width: 300px;
     box-shadow: 0 0 50px lightsteelblue;
 }
 
-#hallTitle,
-#pickTitle {
+#title {
     padding-bottom: 10px;
     font-weight: 200;
 }
