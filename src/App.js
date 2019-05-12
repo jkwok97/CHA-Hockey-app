@@ -60,7 +60,7 @@ class App extends Component {
         <div className="header-container">
           <div className="logo-container animated slideInLeft" onClick={this.onClickTeams}>
             <img src={require('./img/cha_logo.jpg')} alt="CHA-logo" className="logo"></img>
-            <p class="logo-text">est.1995</p>
+            <p className="logo-text">est.1995</p>
           </div>
           <div className="header">
             <h1 className="header-text animated rollIn">CONTINENTAL HOCKEY ASSOCIATION</h1>
