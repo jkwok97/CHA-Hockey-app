@@ -57,7 +57,7 @@ class RulesPrizesComp extends Component {
             <div className="container-rulesPrizes">
                 <div className="container-rules-individual">
                     <div id="winnings-overlay" onClick={this.removeOverlay}>
-                        <div id="winnings">
+                        <div id="winnings" className="rulesPrizesText">
                             <h3 className="rules-title">CHA Winnings Allotment</h3>
                             <li>Liberty Cup Champ - $300</li>
                             <li>Liberty Cup Runner Up - $150</li>
@@ -78,7 +78,7 @@ class RulesPrizesComp extends Component {
                 </div>
                 <div className="container-rules-individual">
                     <div id="equal-overlay" onClick={this.removeOverlay}>
-                        <div id="per">
+                        <div id="per" className="rulesPrizesText">
                             <h3 className="rules-title">Player Equalization Rule</h3>
                             <li>Any skater under 41 NHL games played or any goaltender under 35 NHL games played is subject to the player equalizer rule (PER), also known as the 110% rule.</li>
                             <li>Subject players may only play the number of their previous season's NHL games played total plus 10% during the CHA's regular season.</li>
@@ -93,7 +93,7 @@ class RulesPrizesComp extends Component {
                 </div>
                 <div className="container-rules-individual">
                     <div id="playoff-overlay" onClick={this.removeOverlay}>
-                        <div id="per-playoff">
+                        <div id="per-playoff" className="rulesPrizesText">
                             <h3 className="rules-title">Player Playoff Eligibility</h3>
                             <li>Skaters under 41 NHL games played are not eligible until the 2nd round.</li>
                             <li>Skaters under 31 NHL games played are not eligible until the 3rd round.</li>
@@ -102,14 +102,14 @@ class RulesPrizesComp extends Component {
                             <li>Goalies under 35 NHL games played are available in any/all rounds of the playoffs as injury replacements only.</li>
                         </div>
                     </div>
-                    <div  onClick={this.displayOverlayPlayoff} className="icon-container">
+                    <div onClick={this.displayOverlayPlayoff} className="icon-container">
                         <img src={require('./img/005-puck.svg')} alt="trophy" className="rulesImg"></img>
                         <p className="rules-p">Playoff Eligibility</p>
                     </div> 
                 </div>
                 <div className="container-rules-individual">
                     <div id="draft-overlay" onClick={this.removeOverlay}>
-                        <div id="rules-draft">
+                        <div id="rules-draft" className="rulesPrizesText2">
                             <h3 className="rules-title">CHA Draft Lottery</h3>
                             <ul>
                             <li>The bottom 9 teams in the regular season qualify for the draft lottery.</li>
@@ -139,7 +139,7 @@ class RulesPrizesComp extends Component {
                 </div>
                 <div className="container-rules-individual">
                     <div id="goalie-overlay" onClick={this.removeOverlay}>
-                        <div id="rules-goalie">
+                        <div id="rules-goalie" className="rulesPrizesText">
                             <h3 className="rules-title">Emergency Goaltender Rule (EGR)</h3>
                             <li>Teams may carry no more than three and no less than two goaltenders at any given time.</li>
                             <li>Any team opting to carry three goaltenders is eligible for the Emergency Goaltender Rule.</li>
@@ -159,7 +159,7 @@ class RulesPrizesComp extends Component {
                 </div>
                 <div className="container-rules-individual">
                     <div id="player-overlay" onClick={this.removeOverlay}>
-                        <div id="rules-player">
+                        <div id="rules-player" className="rulesPrizesText2">
                             <h3 className="rules-title">Player Protection Rule</h3>
                             <ul>
                                 <li>If a CHA player does not play in the minimum required NHL games for CHA game disk eligibility, he is subject to the Player Protection Rule.</li>
@@ -179,7 +179,7 @@ class RulesPrizesComp extends Component {
                 </div>
                 <div className="container-rules-individual">
                     <div id="roster-overlay" onClick={this.removeOverlay}>
-                        <div id="rules-roster">
+                        <div id="rules-roster" className="rulesPrizesText">
                             <h3 className="rules-title">Roster Maximums and Minimums</h3>
                             <li>CHA rosters may comprise of a maximum of 30 skaters, including at least 2 (but no more than 3) goaltenders (see Emergency Goaltender Rule).</li>
                             <li>CHA rosters must have a minimum of 24 players (including goaltenders).</li>
@@ -193,7 +193,7 @@ class RulesPrizesComp extends Component {
                 </div>
                 <div className="container-rules-individual">
                     <div id="waiver-overlay" onClick={this.removeOverlay}>
-                        <div id="rules-waiver">
+                        <div id="rules-waiver" className="rulesPrizesText">
                             <h3 className="rules-title">Waiver Wire Rules</h3>
                             <li>Waiver claims will be made Sundays at 2 week intervals throughout the regular season (there may be occurrences when this number varies).</li>
                             <li>The first waiver claim of every year will be the first weekend immediately following the preseason.</li>

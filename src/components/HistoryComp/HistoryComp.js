@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './HistoryComp.css'
 import DraftTableComp from '../DraftTableComp/DraftTableComp';
+import ChampionsTableComp from '../ChampionsTableComp/ChampionsTableComp';
 
 class HistoryComp extends Component {
     constructor() {
@@ -16,15 +17,16 @@ class HistoryComp extends Component {
         fetch(`https://cha-hockey-app-server.herokuapp.com/drafts`)
           .then(response => response.json())
           .then(data => this.setState({drafts: data}))
-          .catch(err => console.log(err,'error'))
+          .catch(err => console.log(err,'error'));
+
+        fetch(`https://cha-hockey-app-server.herokuapp.com/champions`)
+          .then(response => response.json())
+          .then(data => this.setState({champions: data}))
+          .catch(err => console.log(err,'error'));
     }
 
     onClickTrophy = () => {
         this.setState({display: 'champions'});
-        fetch(`https://cha-hockey-app-server.herokuapp.com/champions`)
-          .then(response => response.json())
-          .then(data => this.setState({champions: data}))
-          .catch(err => console.log(err,'error'))
     }
 
     onClickDrafts = () => {
@@ -56,32 +58,38 @@ class HistoryComp extends Component {
         }
         else if (this.state.display === 'champions') {
             return (
+                // <div className="container-history">
+                //     <h3 onClick={this.onClickDrafts}>CHA Hall Of Champions</h3>
+                //         <table className="center">
+                //             <tbody>
+                //                 <tr>
+                //                     <th>Year</th>
+                //                     <th>Team Name</th>
+                //                     <th>Owner</th>
+                //                 </tr>
+                //                     {
+                //                     this.state.champions.map((champ, i) => {
+                //                         return <tr key={champ.id}>
+                //                                 <td key={champ.id}>{champ.year_won}</td>
+                //                                 <td>{champ.team_name}</td>
+                //                                 <td>{champ.owner_name}</td>
+                //                                 </tr>
+                //                     })
+                //                     }
+                //             </tbody>
+                //         </table> 
+                // </div>
                 <div className="container-history">
-                    <h3 onClick={this.onClickDrafts}>CHA Hall Of Champions</h3>
-                        <table className="center">
-                            <tbody>
-                                <tr>
-                                    <th>Year</th>
-                                    <th>Team Name</th>
-                                    <th>Owner</th>
-                                </tr>
-                                    {
-                                    this.state.champions.map((champ, i) => {
-                                        return <tr key={champ.id}>
-                                                <td key={champ.id}>{champ.year_won}</td>
-                                                <td>{champ.team_name}</td>
-                                                <td>{champ.owner_name}</td>
-                                                </tr>
-                                    })
-                                    }
-                            </tbody>
-                        </table> 
+                    <h3 onClick={this.onClickDrafts} className="draftTitle">CHA Champions</h3>
+                    <div className="championsTable">
+                        <ChampionsTableComp champions={this.state.champions}/>
+                    </div>
                 </div>
             )
         } else if (this.state.display === 'drafts') { 
             return (
                 <div className="container-draftpicks">
-                    <h3 onClick={this.onClickTrophy} class="draftTitle">CHA Drafts</h3>
+                    <h3 onClick={this.onClickTrophy} className="draftTitle">CHA Drafts</h3>
                     <div className="draftTable">
                         <DraftTableComp drafts={this.state.drafts}/>
                     </div>

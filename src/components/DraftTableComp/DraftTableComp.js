@@ -81,7 +81,7 @@ class DraftTableComp extends React.Component {
               ]
             }
           ]}
-          defaultPageSize={5}
+          defaultPageSize={10}
           style={{
             height: "70vh"
           }}

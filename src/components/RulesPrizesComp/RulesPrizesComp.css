@@ -24,13 +24,13 @@
 
 .rulesImg {
     margin: 0;
-    width: 100%;
+    /* width: 100%; */
     /* border: 1px solid brown; */
 }
 
 .rules-p {
     /* padding-bottom: 5px; */
-    width: 100%;
+    width: 75%;
     /* border: 1px solid green; */
     text-align: center;
 }
@@ -39,6 +39,7 @@
     /* border: 1px solid orange; */
     height: 100%;
     width: 100%;
+    border-radius: 50px;
     display: inline-flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -79,8 +80,8 @@ img {
     bottom: 10%;
     border-radius: 20px;
     box-shadow: 0 0 30px lightsteelblue;
-    background-color: rgba(0, 0, 0, 0.90);
-    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
     cursor: pointer;
     color:white;
   }
@@ -141,25 +142,35 @@ img {
     background-attachment: fixed;
 }
 
-#winnings,
-#per,
-#per-playoff,
-#rules-goalie,
-#rules-roster,
-#rules-waiver {
+.rulesPrizesText {
     display: inline-block;
     margin: 5%;
-    width: 70%;
+    width: 75%;
     text-indent: -20px;
     text-align: left;
+    /* border: 1px solid yellow; */
+    background: transparent;
 }
 
-#rules-draft,
-#rules-player {
+.rulesPrizesText li,
+.rulesPrizesText h3 {
+    background: transparent;
+}
+
+.rulesPrizesText2 {
     display: inline-block;
     margin: 5%;
-    width: 70%;
+    width: 75%;
     text-align: left;
+    /* border: 1px solid greenyellow; */
+    background: transparent;
+}
+
+.rulesPrizesText2 li,
+.rulesPrizesText2 h3,
+.rulesPrizesText2 ul,
+.rulesPrizesText2 ol {
+    background: transparent;
 }
 
 .rules-title {

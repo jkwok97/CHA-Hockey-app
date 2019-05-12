@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-evenly;
     width: 95%;
+    margin-bottom: 30px;
     /* border: 1px solid green; */
 }
 .container-history,
@@ -15,6 +16,10 @@
     align-items: center;
 }
 
+.container-history {
+    width: 50%;
+}
+
 .container-draftpicks {
     display: flex;
     flex-wrap: wrap;
@@ -24,7 +29,7 @@
     align-items: center;
     /* border: 1px solid pink; */
     width: 100%;
-    height: 40vh;
+    /* height: 40vh; */
 }
 
 table {
@@ -39,7 +44,7 @@ table.draftTable {
     border-collapse: collapse;
     border-radius: 10px;
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     margin: 0 auto;
     cursor: default;
 }
@@ -59,9 +64,10 @@ td, th,
     padding: 10px 10px;
 }
   
-tr:hover {
-    color: rgb(59, 59, 59);
-    background-color: #dddddd;
+tr:hover,
+tr:active {
+    color: red;
+    background-color: whitesmoke;
 }
 
 .container-history h3,
@@ -90,14 +96,10 @@ tr:hover {
     text-align: center;
 }
 
-.draftTable {
-    border: 1px solid purple;
-    width: 100%;
-    height: 40vh;
-}
-
-.ReactTable {
-    height: 40vh;
+.draftTable,
+.championsTable {
+    /* border: 1px solid purple; */
+    width: 90%;
 }
 
 #draft-year-overlay,
