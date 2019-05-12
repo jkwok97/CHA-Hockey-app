@@ -58,27 +58,6 @@ class HistoryComp extends Component {
         }
         else if (this.state.display === 'champions') {
             return (
-                // <div className="container-history">
-                //     <h3 onClick={this.onClickDrafts}>CHA Hall Of Champions</h3>
-                //         <table className="center">
-                //             <tbody>
-                //                 <tr>
-                //                     <th>Year</th>
-                //                     <th>Team Name</th>
-                //                     <th>Owner</th>
-                //                 </tr>
-                //                     {
-                //                     this.state.champions.map((champ, i) => {
-                //                         return <tr key={champ.id}>
-                //                                 <td key={champ.id}>{champ.year_won}</td>
-                //                                 <td>{champ.team_name}</td>
-                //                                 <td>{champ.owner_name}</td>
-                //                                 </tr>
-                //                     })
-                //                     }
-                //             </tbody>
-                //         </table> 
-                // </div>
                 <div className="container-history">
                     <h3 onClick={this.onClickDrafts} className="draftTitle">CHA Champions</h3>
                     <div className="championsTable">
