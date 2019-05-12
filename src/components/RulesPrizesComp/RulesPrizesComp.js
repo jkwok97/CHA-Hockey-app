@@ -71,7 +71,7 @@ class RulesPrizesComp extends Component {
                             <li>Website Maintenance - $50</li>
                         </div>
                     </div>
-                    <div onClick={this.displayOverlayWinnings} class="icon-container">
+                    <div onClick={this.displayOverlayWinnings} className="icon-container">
                         <img src={require('./img/001-championship-trophy.svg')} alt="trophy" className="rulesImg"></img>
                         <p className="rules-p">CHA Winnings Allotment</p>
                     </div>
@@ -86,7 +86,7 @@ class RulesPrizesComp extends Component {
                             <li>Any GM who violates the 'PER' will have the offending player returned into the free agent pool. That player would not be available until the following Entry Draft.</li>
                         </div>
                     </div>
-                    <div onClick={this.displayOverlayEqual} class="icon-container">
+                    <div onClick={this.displayOverlayEqual} className="icon-container">
                         <img src={require('./img/002-hockey.svg')} alt="trophy" className="rulesImg"></img>
                         <p className="rules-p">Player Equalization Rule(PER)</p>
                     </div>
@@ -102,7 +102,7 @@ class RulesPrizesComp extends Component {
                             <li>Goalies under 35 NHL games played are available in any/all rounds of the playoffs as injury replacements only.</li>
                         </div>
                     </div>
-                    <div  onClick={this.displayOverlayPlayoff} class="icon-container">
+                    <div  onClick={this.displayOverlayPlayoff} className="icon-container">
                         <img src={require('./img/005-puck.svg')} alt="trophy" className="rulesImg"></img>
                         <p className="rules-p">Playoff Eligibility</p>
                     </div> 
@@ -132,7 +132,7 @@ class RulesPrizesComp extends Component {
                             </ul>
                         </div>
                     </div>
-                    <div onClick={this.displayOverlayDraft} class="icon-container">
+                    <div onClick={this.displayOverlayDraft} className="icon-container">
                         <img src={require('./img/004-lottery.svg')} alt="trophy" className="rulesImg"></img>
                         <p className="rules-p">CHA Draft Lottery</p>
                     </div>
@@ -152,7 +152,7 @@ class RulesPrizesComp extends Component {
                             <li>The EGR applies in the playoffs as well.</li>
                         </div>
                     </div>
-                    <div onClick={this.displayOverlayGoalie} class="icon-container">
+                    <div onClick={this.displayOverlayGoalie} className="icon-container">
                         <img src={require('./img/003-ice-hockey.svg')} alt="trophy" className="rulesImg"></img>
                         <p className="rules-p">Emergency Goaltender Rule</p>
                     </div> 
@@ -172,7 +172,7 @@ class RulesPrizesComp extends Component {
                             </ul>
                         </div>
                     </div>
-                    <div onClick={this.displayOverlayPlayer} class="icon-container">
+                    <div onClick={this.displayOverlayPlayer} className="icon-container">
                         <img src={require('./img/002-hockey.svg')} alt="trophy" className="rulesImg"></img>
                         <p className="rules-p">Player Protection Rule</p>
                     </div> 
@@ -186,7 +186,7 @@ class RulesPrizesComp extends Component {
                             <li>Roster maximum and salary cap only apply during the season.</li>
                         </div>
                     </div>  
-                    <div onClick={this.displayOverlayRoster} class="icon-container">
+                    <div onClick={this.displayOverlayRoster} className="icon-container">
                         <img src={require('./img/002-hockey.svg')} alt="trophy" className="rulesImg"></img>
                         <p className="rules-p">Roster Maximums and Minimums</p>
                     </div> 
@@ -209,7 +209,7 @@ class RulesPrizesComp extends Component {
                             <li>Waiver claim positions may not be traded.</li>
                         </div>
                     </div>
-                    <div onClick={this.displayOverlayWaiver} class="icon-container">
+                    <div onClick={this.displayOverlayWaiver} className="icon-container">
                         <img src={require('./img/005-puck.svg')} alt="trophy" className="rulesImg"></img>
                         <p className="rules-p">Waiver Wire</p>
                     </div>
