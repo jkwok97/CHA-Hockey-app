@@ -3,13 +3,18 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
+    align-content: center;
+    /* border: 1px solid orange; */
+    padding-left: 100px;
 }
 
 .container-rules-individual {
-    margin: 20px;
-    width: 200px;
+    display: flex;
+    margin: 0 150px 30px 0;
+    width: 175px;
+    height: 175px;
     justify-content: center;
+    align-items: center;
     box-shadow: 0 0 50px lightsteelblue;
     border-radius: 50px;
     cursor: pointer;
@@ -17,8 +22,27 @@
     transition: background-color 0.5s, border 0.5s, color 0.5s, box-shadow 0.5s;
 }
 
+.rulesImg {
+    margin: 0;
+    width: 100%;
+    /* border: 1px solid brown; */
+}
+
 .rules-p {
-    padding-bottom: 5px;
+    /* padding-bottom: 5px; */
+    width: 100%;
+    /* border: 1px solid green; */
+    text-align: center;
+}
+
+.icon-container {
+    /* border: 1px solid orange; */
+    height: 100%;
+    width: 100%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .container-rules-individual:hover,

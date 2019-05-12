@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './img/logo.svg';
 import './css/App.css';
 import './img/cha_logo.jpg';
 import TeamsComp from './components/TeamsComp/TeamsComp';
@@ -39,10 +38,7 @@ class App extends Component {
 
   render() {
     let toShow;
-    if (this.state.display === 'teams') {
-      toShow = 
-        <TeamsComp />
-    } else if (this.state.display === 'stats') {
+    if (this.state.display === 'stats') {
       toShow = 
         <StatsComp />
     } else if (this.state.display === 'history') {
@@ -54,33 +50,36 @@ class App extends Component {
     } else if (this.state.display === 'schedule') {
       toShow =
         <ScheduleComp />
+    } else if (this.state.display === 'teams') {
+      toShow = '';
     }
     
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-        </header>
-        <div className="body">
-        <nav>
-          <div className="row animated slideInLeft">
-              <img src={require('./img/cha_logo.jpg')} alt="CHA-logo" className="logo"></img>
-              <h5>est.1995</h5>
+
+        <div className="header-container">
+          <div className="logo-container animated slideInLeft" onClick={this.onClickTeams}>
+            <img src={require('./img/cha_logo.jpg')} alt="CHA-logo" className="logo"></img>
+            <p class="logo-text">est.1995</p>
           </div>
-        </nav>
-        <div className="heading">
-        <h1 className="animated rollIn">Continental Hockey Association</h1>
+          <div className="header">
+            <h1 className="header-text animated rollIn">CONTINENTAL HOCKEY ASSOCIATION</h1>
+          </div>
         </div>
+
         <div className="rink-text-box">
-            <div className="navagation" id="references"></div>
-            <button className="btn-ghost animated rollIn" onClick={this.onClickStats}id="stats">Statistics</button>
-            <button className="btn-ghost animated rollIn" onClick={this.onClickTeams}>Teams</button>
-            <button className="btn-ghost animated rollIn" onClick={this.onClickHistory}>History</button>
-            <button className="btn-ghost animated rollIn" onClick={this.onClickRulesPrizes}>Rules & Prizes</button>
-            <button className="btn-ghost animated rollIn" onClick={this.onClickSchedule}>Schedule</button>
+          <div className="navagation" id="references"></div>
+          <button className="btn-ghost animated rollIn" onClick={this.onClickStats}id="stats">Statistics</button>
+          {/* <button className="btn-ghost animated rollIn" onClick={this.onClickTeams}>Teams</button> */}
+          <button className="btn-ghost animated rollIn" onClick={this.onClickHistory}>History</button>
+          <button className="btn-ghost animated rollIn" onClick={this.onClickRulesPrizes}>Rules & Prizes</button>
+          <button className="btn-ghost animated rollIn" onClick={this.onClickSchedule}>Schedule</button>
         </div>
-        <section> { toShow } </section>
-        </div>
+
+        <section className="sectionShow">
+         { toShow }
+         <TeamsComp />
+        </section>
         
       </div>
     );

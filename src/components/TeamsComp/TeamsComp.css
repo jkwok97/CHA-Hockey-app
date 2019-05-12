@@ -27,54 +27,53 @@
     -ms-transform: translate(-50%,-50%);
   }
 
-  
-  /* --------------------------------------------------------- */
-  /* BUTTONS */
-  /* --------------------------------------------------------- */
-  
-  /* --------------------------------------------------------- */
-  /* Teams */
-  /* --------------------------------------------------------- */
-  
   .container-teams {
+    display: flex;
+    justify-items: center;
+    width: 95%;
+    /* height: 100%; */
+    align-items: flex-end;
+    /* border: 1px solid red; */
+  }
+
+  .teamLogos {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: flex-end;
-    height: 53vh;
   }
-  
-  .container-teams img {
-    width: 130px;
-    height: 130px;
-    margin: 1.5px;
+
+  .teamLogos img {
+    width: 140px;
+    height: 140px;
+    margin: 5px;
     animation: zoomInDown 3s;
     transform: scale(1.0);
     transition: transform 0.75s, opacity 0.75s;
     opacity: 0.75;
   }
-  
-  .container-teams img:hover {
+
+  .teamLogos img:hover {
     transform: scale(1.1);
     opacity: 1;
     cursor: pointer;
   }
-  
+
   .embed-responsive {
     width: 90%;
     margin: 20px 60px;
   }
   
-  @media only screen and (max-width: 1680px) {
+  /* @media only screen and (max-width: 1680px) {
           
     .container-teams img {
       width: 140px;
       height: 140px;
       margin: 2px;
     }
-  }
+  } */
 
-  @media only screen and (max-width: 1366px) {
+  /* @media only screen and (max-width: 1366px) {
           
     .container-teams img {
       width: 120px;
@@ -260,4 +259,4 @@
     .embed-responsive {
       height: 200%;
     }
-  }
+  } */

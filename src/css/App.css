@@ -3,57 +3,78 @@
 }
 
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 5vmin;
-}
-
-.App-header {
-  background-color: black;
-  min-height: 5vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.body,
-html {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url("../img/High+Res+Hockey+5.jpg");
   background-size: cover;
   background-position: center;
-  height: 95vh;
+  height: 100vh;
   background-attachment: fixed;
   background-color: black;
 }
 
-h1 {
-  margin-top: 0;
-  margin-bottom: 20px;
+.header-container {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: left;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-container {
+  display: flex;
+  justify-self: flex-start;
+  padding-left: 50px;
+  padding-top: 10px;
+  margin-right: 17%;
+  animation-duration: 2s;
+  animation-delay: 1s;
+}
+
+.logo {
+  margin: 0;
+  height: 50px;
+}
+
+.logo-text {
+  color: whitesmoke;
+  font-size: 75%;
+  width: 100%;
+}
+
+.header-text {
   color: #fff;
-  font-size: 240%;
+  font-size: 300%;
   font-weight: 100;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  word-spacing: 4px;
   text-align: center;
   display: inline-block;
   animation-duration: 2s;
   animation-delay: 1s;
 }
 
-h5 {
-  margin: 20px;
-  color: #fff;
-  font-size: 75%;
+.rink-text-box {
+  display: flex;
+  padding: 10px 0 10px 0;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
+  animation-duration: 2s;
+  animation-delay: 1s;
 }
 
-/* --------------------------------------------------------- */
-/* BUTTONS */
-/* --------------------------------------------------------- */
+.sectionShow {
+  /* border: 1px solid purple; */
+  height: 80vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* align-content: center; */
+  padding-bottom: 20px;
+}
 
 .btn-ghost:link,
 .btn-ghost:visited,
@@ -85,37 +106,16 @@ button {
     background-color: #d63031;
 }
 
-.row {
-  display: flex;
-  height: 12vh;
-  max-width: 1140px;
-  margin: 0 auto;
-  animation-duration: 2s;
-  animation-delay: 1s;
-}
 
-.logo {
-  height: 50px;
-  width:auto;
-  float:left;
-  margin-top: 20px;
-}
 
-.rink-text-box {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  height: 20vh;
-  animation-duration: 2s;
-  animation-delay: 1s;
-}
+
 
 /* --------------------------------------------------------- */
 /* MEDIA */
 /* --------------------------------------------------------- */
 
 
-@keyframes App-logo-spin {
+/* @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
@@ -416,4 +416,4 @@ button {
     margin-top: 10px;
     font-size: 25%;
   }
-}
+} */

@@ -13,6 +13,7 @@ class DraftTableComp extends React.Component {
   }
 
   render() {
+    console.log(this.state);
     const { data } = this.state;
     return (
       <div>
@@ -80,7 +81,7 @@ class DraftTableComp extends React.Component {
               ]
             }
           ]}
-          defaultPageSize={10}
+          defaultPageSize={5}
           style={{
             height: "70vh"
           }}
