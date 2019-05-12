@@ -13,7 +13,7 @@ class HistoryComp extends Component {
     }
 
     componentDidMount = () => {
-        fetch(`http://localhost:3000/drafts`)
+        fetch(`https://cha-hockey-app-server.herokuapp.com/drafts`)
           .then(response => response.json())
           .then(data => this.setState({drafts: data}))
           .catch(err => console.log(err,'error'))
@@ -21,7 +21,7 @@ class HistoryComp extends Component {
 
     onClickTrophy = () => {
         this.setState({display: 'champions'});
-        fetch(`http://localhost:3000/champions`)
+        fetch(`https://cha-hockey-app-server.herokuapp.com/champions`)
           .then(response => response.json())
           .then(data => this.setState({champions: data}))
           .catch(err => console.log(err,'error'))
