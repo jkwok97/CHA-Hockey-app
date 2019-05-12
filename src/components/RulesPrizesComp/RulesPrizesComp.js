@@ -72,7 +72,7 @@ class RulesPrizesComp extends Component {
                         </div>
                     </div>
                     <div onClick={this.displayOverlayWinnings} class="icon-container">
-                        <img src={require('./img/001-championship-trophy.svg')} alt="trophy" class="rulesImg"></img>
+                        <img src={require('./img/001-championship-trophy.svg')} alt="trophy" className="rulesImg"></img>
                         <p className="rules-p">CHA Winnings Allotment</p>
                     </div>
                 </div>
@@ -87,7 +87,7 @@ class RulesPrizesComp extends Component {
                         </div>
                     </div>
                     <div onClick={this.displayOverlayEqual} class="icon-container">
-                        <img src={require('./img/002-hockey.svg')} alt="trophy" class="rulesImg"></img>
+                        <img src={require('./img/002-hockey.svg')} alt="trophy" className="rulesImg"></img>
                         <p className="rules-p">Player Equalization Rule(PER)</p>
                     </div>
                 </div>
@@ -103,7 +103,7 @@ class RulesPrizesComp extends Component {
                         </div>
                     </div>
                     <div  onClick={this.displayOverlayPlayoff} class="icon-container">
-                        <img src={require('./img/005-puck.svg')} alt="trophy" class="rulesImg"></img>
+                        <img src={require('./img/005-puck.svg')} alt="trophy" className="rulesImg"></img>
                         <p className="rules-p">Playoff Eligibility</p>
                     </div> 
                 </div>
@@ -133,7 +133,7 @@ class RulesPrizesComp extends Component {
                         </div>
                     </div>
                     <div onClick={this.displayOverlayDraft} class="icon-container">
-                        <img src={require('./img/004-lottery.svg')} alt="trophy" class="rulesImg"></img>
+                        <img src={require('./img/004-lottery.svg')} alt="trophy" className="rulesImg"></img>
                         <p className="rules-p">CHA Draft Lottery</p>
                     </div>
                 </div>
@@ -153,7 +153,7 @@ class RulesPrizesComp extends Component {
                         </div>
                     </div>
                     <div onClick={this.displayOverlayGoalie} class="icon-container">
-                        <img src={require('./img/003-ice-hockey.svg')} alt="trophy" class="rulesImg"></img>
+                        <img src={require('./img/003-ice-hockey.svg')} alt="trophy" className="rulesImg"></img>
                         <p className="rules-p">Emergency Goaltender Rule</p>
                     </div> 
                 </div>
@@ -173,7 +173,7 @@ class RulesPrizesComp extends Component {
                         </div>
                     </div>
                     <div onClick={this.displayOverlayPlayer} class="icon-container">
-                        <img src={require('./img/002-hockey.svg')} alt="trophy" class="rulesImg"></img>
+                        <img src={require('./img/002-hockey.svg')} alt="trophy" className="rulesImg"></img>
                         <p className="rules-p">Player Protection Rule</p>
                     </div> 
                 </div>
@@ -187,7 +187,7 @@ class RulesPrizesComp extends Component {
                         </div>
                     </div>  
                     <div onClick={this.displayOverlayRoster} class="icon-container">
-                        <img src={require('./img/002-hockey.svg')} alt="trophy" class="rulesImg"></img>
+                        <img src={require('./img/002-hockey.svg')} alt="trophy" className="rulesImg"></img>
                         <p className="rules-p">Roster Maximums and Minimums</p>
                     </div> 
                 </div>
@@ -210,7 +210,7 @@ class RulesPrizesComp extends Component {
                         </div>
                     </div>
                     <div onClick={this.displayOverlayWaiver} class="icon-container">
-                        <img src={require('./img/005-puck.svg')} alt="trophy" class="rulesImg"></img>
+                        <img src={require('./img/005-puck.svg')} alt="trophy" className="rulesImg"></img>
                         <p className="rules-p">Waiver Wire</p>
                     </div>
                 </div>
