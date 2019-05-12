@@ -40,11 +40,11 @@ class HistoryComp extends Component {
             return (
                 <div className="history-categories">
                     <div className="container-history">
-                        <h3 class="title">CHA Hall Of Champions</h3>
+                        <h3 className="title">CHA Hall Of Champions</h3>
                         <img src={require('./libertycup.jpg')} alt="trophy" onClick={this.onClickTrophy} id="libertyCup"></img>
                     </div>
                     <div className="container-draftpicks-section">
-                        <h3 class="title">CHA Past DraftPicks</h3>
+                        <h3 className="title">CHA Past DraftPicks</h3>
                         <img src={require('./Drafts.jpg')} alt="drafts" onClick={this.onClickDrafts} id="drafts"></img>
                     </div>
                     {/* <div className="container-records">
@@ -82,7 +82,7 @@ class HistoryComp extends Component {
             return (
                 <div className="container-draftpicks">
                     <h3 onClick={this.onClickTrophy} class="draftTitle">CHA Drafts</h3>
-                    <div class="draftTable">
+                    <div className="draftTable">
                         <DraftTableComp drafts={this.state.drafts}/>
                     </div>
                 </div>
