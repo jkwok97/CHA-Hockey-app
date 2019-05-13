@@ -53,27 +53,45 @@ class TeamsComp extends Component {
                     <div className="frames"></div>
                 </div>
                 <div className="teamLogos">
-                    <img src={require('./img/assassins.jpg')} alt="Oakland Assassins" id="oakland" onClick={this.teamsCHA}></img>
-                    <img src={require('./img/Mountaineers6.jpg')} alt="Kelowna Mountaineers" id="kelowna" onClick={this.teamsCHA}></img>
-                    <img src={require('./img/cocks2.jpg')} alt="San Francisco Fighting Cocks" id="sanFran" onClick={this.teamsCHA}></img>
-                    <img src={require('./img/seattlestorm.jpg')} alt="Seattle Storm" id="seattle" onClick={this.teamsCHA}></img>
-                    <img src={require('./img/Vipers.jpg')} alt="Victoria Vipers" id="victoria" onClick={this.teamsCHA}></img>
-                    <img src={require('./img/Desperado7.jpg')} alt="Cheyenne Desperado" id="cheyenne" onClick={this.teamsCHA}></img>
-                    <img src={require('./img/oilbarons3.jpg')} alt="Oklahoma City Oil Barons" id="oklahoma" onClick={this.teamsCHA}></img>
-                    <img src={require('./img/Hound4.jpg')} alt="Memphis Hound Dogs" id="memphis" onClick={this.teamsCHA}></img>
-                    <img src={require('./img/wolfpack.jpg')} alt="Wichita Wolfpack" id="wichita" onClick={this.teamsCHA}></img>
-                    <img src={require('./img/Brahmas3.jpg')} alt="Lone Star Brahmas" id="loneStar" onClick={this.teamsCHA}></img>
-                    <img src={require('./img/dragz.jpg')} alt="Milwaukee Ice Dragons" id="milwaukee" onClick={this.teamsCHA}></img>
-                    <img src={require('./img/Goats11.jpg')} alt="Indianapolis Goats" id="indianapolis" onClick={this.teamsCHA}></img>
-                    <img src={require('./img/NorthStars.jpg')} alt="Mississauga North Stars" id="mississauga" onClick={this.teamsCHA}></img>
-                    <img src={require('./img/glory2.jpg')} alt="Green Bay Glory" id="greenBay" onClick={this.teamsCHA}></img>
-                    <img src={require('./img/Prowlers2.jpg')} alt="Peoria Prowlers" id="peoria" onClick={this.teamsCHA}></img>
-                    <img src={require('./img/Cyclones4.jpg')} alt="Cincinnati Cylcones" id="cincinnati" onClick={this.teamsCHA}></img>
-                    <img src={require('./img/Flashers2.jpg')} alt="Atlanta Flashers" id="atlanta" onClick={this.teamsCHA}></img>
-                    <img src={require('./img/rays.jpg')} alt="South Carolina Stingrays" id="sCarolina" onClick={this.teamsCHA}></img>
-                    <img src={require('./img/KillerBees.jpg')} alt="Staten Island Killer Bees" id="statenIs" onClick={this.teamsCHA}></img>
-                    <img src={require('./img/Green Jackets.jpg')} alt="Augusta Green Jackets" id="augusta" onClick={this.teamsCHA}></img>
-                </div>  
+                    <div className="west-conference-teams-container animated slideInLeft">
+                        <h1 className="title-text">WESTERN CONFERENCE</h1>
+                        <div className="northWest-teams-container animated rotateInDownLeft">
+                            <h3 className="title-text2">NORTHWEST DIVISION</h3>
+                            <img src={require('./img/assassins.jpg')} alt="Oakland Assassins" id="oakland" onClick={this.teamsCHA} data-toggle="tooltip" data-placement="bottom" title="Oakland Assassins"></img>
+                            <img src={require('./img/Mountaineers6.jpg')} alt="Kelowna Mountaineers" id="kelowna" onClick={this.teamsCHA} data-toggle="tooltip" data-placement="bottom" title="Kelowna Mountaineers"></img>
+                            <img src={require('./img/cocks2.jpg')} alt="San Francisco Fighting Cocks" id="sanFran" onClick={this.teamsCHA} data-toggle="tooltip" data-placement="bottom" title="San Francisco Fighting Cocks"></img>
+                            <img src={require('./img/seattlestorm.jpg')} alt="Seattle Storm" id="seattle" onClick={this.teamsCHA} data-toggle="tooltip" data-placement="bottom" title="Seattle Storm"></img>
+                            <img src={require('./img/Vipers.jpg')} alt="Victoria Vipers" id="victoria" onClick={this.teamsCHA} data-toggle="tooltip" data-placement="bottom" title="Victoria Vipers"></img>
+                        </div>  
+                        <div className="southWest-teams-container animated rotateInUpLeft">
+                            <h3 className="title-text2">SOUTHWEST DIVISION</h3>
+                            <img src={require('./img/Desperado7.jpg')} alt="Cheyenne Desperado" id="cheyenne" onClick={this.teamsCHA} data-toggle="tooltip" data-placement="bottom" title="Cheyenne Desperado"></img>
+                            <img src={require('./img/oilbarons3.jpg')} alt="Oklahoma City Oil Barons" id="oklahoma" onClick={this.teamsCHA} data-toggle="tooltip" data-placement="bottom" title="Oklahoma City Oil Barons"></img>
+                            <img src={require('./img/Hound4.jpg')} alt="Memphis Hound Dogs" id="memphis" onClick={this.teamsCHA} data-toggle="tooltip" data-placement="bottom" title="Memphis Hound Dogs"></img>
+                            <img src={require('./img/wolfpack.jpg')} alt="Wichita Wolfpack" id="wichita" onClick={this.teamsCHA} data-toggle="tooltip" data-placement="bottom" title="Wichita Wolfpack"></img>
+                            <img src={require('./img/Brahmas3.jpg')} alt="Lone Star Brahmas" id="loneStar" onClick={this.teamsCHA} data-toggle="tooltip" data-placement="bottom" title="Lone Star Brahmas"></img>
+                        </div>
+                    </div>
+                    <div className="east-conference-teams-container animated slideInRight">
+                        <h1 className="title-text">EASTERN CONFERENCE</h1>
+                        <div className="northEast-teams-container animated rotateInDownRight">
+                            <h3 className="title-text2">NORTHEAST DIVISION</h3>
+                            <img src={require('./img/dragz.jpg')} alt="Milwaukee Ice Dragons" id="milwaukee" onClick={this.teamsCHA} data-toggle="tooltip" data-placement="bottom" title="Milwaukee Ice Dragons"></img>
+                            <img src={require('./img/Goats11.jpg')} alt="Indianapolis Goats" id="indianapolis" onClick={this.teamsCHA} data-toggle="tooltip" data-placement="bottom" title="Indianapolis Goats"></img>
+                            <img src={require('./img/NorthStars.jpg')} alt="Mississauga North Stars" id="mississauga" onClick={this.teamsCHA} data-toggle="tooltip" data-placement="bottom" title="Mississauaga North Stars"></img>
+                            <img src={require('./img/glory2.jpg')} alt="Green Bay Glory" id="greenBay" onClick={this.teamsCHA} data-toggle="tooltip" data-placement="bottom" title="Green Bay Glory"></img>
+                            <img src={require('./img/Prowlers2.jpg')} alt="Peoria Prowlers" id="peoria" onClick={this.teamsCHA} data-toggle="tooltip" data-placement="bottom" title="Peoria Prowlers"></img>
+                        </div>
+                        <div className="southEast-teams-container animated rotateInUpRight">
+                            <h3 className="title-text2">SOUTHEAST DIVISION</h3>
+                            <img src={require('./img/Cyclones4.jpg')} alt="Cincinnati Cylcones" id="cincinnati" onClick={this.teamsCHA} data-toggle="tooltip" data-placement="bottom" title="Cincinnati Cyclones"></img>
+                            <img src={require('./img/Flashers2.jpg')} alt="Atlanta Flashers" id="atlanta" onClick={this.teamsCHA} data-toggle="tooltip" data-placement="bottom" title="Atlanta Flashers"></img>
+                            <img src={require('./img/rays.jpg')} alt="South Carolina Stingrays" id="sCarolina" onClick={this.teamsCHA} data-toggle="tooltip" data-placement="bottom" title="South Carolina Stingrays"></img>
+                            <img src={require('./img/KillerBees.jpg')} alt="Staten Island Killer Bees" id="statenIs" onClick={this.teamsCHA} data-toggle="tooltip" data-placement="bottom" title="Staten Island Killer Bees"></img>
+                            <img src={require('./img/Green Jackets.jpg')} alt="Augusta Green Jackets" id="augusta" onClick={this.teamsCHA} data-toggle="tooltip" data-placement="bottom" title="Augusta Green Jackets"></img>
+                        </div>
+                    </div>
+                </div>
             </div>  
         );
     }

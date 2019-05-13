@@ -36,21 +36,21 @@ class ChampionsTableComp extends React.Component {
                   filterAll: true
                 },
                 {
-                  Header: "Name",
-                  id: "owner_name",
+                  Header: "Team",
+                  id: "team_name",
                   maxWidth: 300,
-                  accessor: d => d.owner_name,
+                  accessor: d => d.team_name,
                   filterMethod: (filter, rows) =>
                     matchSorter(rows, filter.value, { keys: ["owner_name"] }),
                   filterAll: true
                 },
                 {
-                    Header: "Team",
-                    id: "team_name",
+                    Header: "Owner",
+                    id: "owner_name",
                     maxWidth: 500,
-                    accessor: d => d.team_name,
+                    accessor: d => d.owner_name,
                     filterMethod: (filter, rows) =>
-                        matchSorter(rows, filter.value, { keys: ["team_name"] }),
+                        matchSorter(rows, filter.value, { keys: ["owner_name"] }),
                     filterAll: true
                 }
               ]

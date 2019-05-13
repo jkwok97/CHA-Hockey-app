@@ -6,14 +6,19 @@ import StatsComp from './components/StatsComp/StatsComp';
 import HistoryComp from './components/HistoryComp/HistoryComp';
 import RulesPrizesComp from './components/RulesPrizesComp/RulesPrizesComp';
 import ScheduleComp from './components/ScheduleComp/ScheduleComp';
+import HomeComp from './components/HomeComp/HomeComp';
 
 class App extends Component {
   constructor() {
     super()
     this.state = {
-      display: '',
+      display: 'home',
       input: ''
     }
+  }
+  
+  onClickHome = () => {
+    this.setState({ display: 'home'});
   }
 
   onClickTeams = () => {
@@ -39,26 +44,24 @@ class App extends Component {
   render() {
     let toShow;
     if (this.state.display === 'stats') {
-      toShow = 
-        <StatsComp />
+      toShow = <StatsComp />
     } else if (this.state.display === 'history') {
-      toShow = 
-        <HistoryComp />
+      toShow = <HistoryComp />
     } else if (this.state.display === 'rulesPrizes') {
-      toShow = 
-        <RulesPrizesComp />
+      toShow = <RulesPrizesComp />
     } else if (this.state.display === 'schedule') {
-      toShow =
-        <ScheduleComp />
+      toShow = <ScheduleComp />
     } else if (this.state.display === 'teams') {
-      toShow = '';
+      toShow = <TeamsComp />
+    } else if (this.state.display === 'home') {
+      toShow = <HomeComp />
     }
     
     return (
       <div className="App">
 
         <div className="header-container">
-          <div className="logo-container animated slideInLeft" onClick={this.onClickTeams}>
+          <div className="logo-container animated slideInLeft" onClick={this.onClickHome}>
             <img src={require('./img/cha_logo.jpg')} alt="CHA-logo" className="logo"></img>
             <p className="logo-text">est.1995</p>
           </div>
@@ -67,10 +70,9 @@ class App extends Component {
           </div>
         </div>
 
-        <div className="rink-text-box">
-          <div className="navagation" id="references"></div>
+        <div className="app-button-container">
           <button className="btn-ghost animated rollIn" onClick={this.onClickStats}id="stats">Statistics</button>
-          {/* <button className="btn-ghost animated rollIn" onClick={this.onClickTeams}>Teams</button> */}
+          <button className="btn-ghost animated rollIn" onClick={this.onClickTeams}>Teams</button>
           <button className="btn-ghost animated rollIn" onClick={this.onClickHistory}>History</button>
           <button className="btn-ghost animated rollIn" onClick={this.onClickRulesPrizes}>Rules & Prizes</button>
           <button className="btn-ghost animated rollIn" onClick={this.onClickSchedule}>Schedule</button>
@@ -78,7 +80,6 @@ class App extends Component {
 
         <section className="sectionShow">
          { toShow }
-         <TeamsComp />
         </section>
         
       </div>

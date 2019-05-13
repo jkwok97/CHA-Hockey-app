@@ -31,8 +31,11 @@
     display: flex;
     justify-items: center;
     width: 95%;
-    align-items: flex-end;
+    align-items: center;
     /* border: 1px solid red; */
+    /* height: 60vh; */
+    background: transparent;
+    margin-top: 100px;
   }
 
   .teamLogos {
@@ -40,14 +43,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 20px;
   }
 
   .teamLogos img {
     width: 140px;
     height: 140px;
-    margin: 5px;
-    animation: zoomInDown 3s;
+    margin: 0 5px 10px 5px;
     transform: scale(1.0);
     transition: transform 0.75s, opacity 0.75s;
     opacity: 0.75;
@@ -63,6 +64,54 @@
     width: 90%;
     margin: 20px 60px;
   }
+
+  .west-conference-teams-container {
+    /* border: 1px solid pink; */
+    background: transparent;
+    text-align: center;
+  }
+
+  .northWest-teams-container {
+    /* border: 1px solid green; */
+    background: transparent;
+    padding: 20px 20px 20px 0;
+  }
+
+  .southWest-teams-container {
+    /* border: 1px solid purple; */
+    background: transparent;
+    padding: 20px 20px 20px 0;
+  }
+
+  .east-conference-teams-container {
+    /* border: 1px solid white; */
+    background: transparent;
+    text-align: center;
+  }
+
+  .northEast-teams-container {
+    /* border: 1px solid brown; */
+    background: transparent;
+    padding: 20px 0 20px 20px;
+  }
+
+  .southEast-teams-container {
+    /* border: 1px solid blue; */
+    background: transparent;
+    padding: 20px 0 20px 20px;
+  }
+
+  .title-text {
+    font-weight: 100;
+    color: white;
+  }
+
+  .title-text2 {
+    font-weight: 200;
+    color: white;
+  }
+
+  /* ///////////////////////////////////////////////////////////////////////// */
   
   /* @media only screen and (max-width: 1680px) {
           

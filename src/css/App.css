@@ -4,18 +4,8 @@
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url("../img/High+Res+Hockey+5.jpg");
   background-size: cover;
   background-position: center;
-  /* height: 100vh; */
   background-attachment: fixed;
   background-color: black;
-}
-
-.App {
-  /* background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url("../img/High+Res+Hockey+5.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  background-attachment: fixed;
-  background-color: black; */
 }
 
 .header-container {
@@ -63,7 +53,7 @@
   animation-delay: 1s;
 }
 
-.rink-text-box {
+.app-button-container {
   display: flex;
   padding: 10px 0 10px 0;
   align-items: center;

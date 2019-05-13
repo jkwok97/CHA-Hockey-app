@@ -29,7 +29,7 @@ class DraftTableComp extends React.Component {
                 {
                   Header: "Draft Year",
                   id: "draftYear",
-                  maxWidth: 150,
+                  maxWidth: 110,
                   accessor: d => d.draft_year,
                   filterMethod: (filter, rows) =>
                     matchSorter(rows, filter.value, { keys: ["draftYear"] }),
@@ -38,7 +38,7 @@ class DraftTableComp extends React.Component {
                 {
                   Header: "Round",
                   id: "round",
-                  maxWidth: 100,
+                  maxWidth: 80,
                   accessor: d => d.round_num,
                   filterMethod: (filter, rows) =>
                     matchSorter(rows, filter.value, { keys: ["round"] }),
@@ -47,7 +47,7 @@ class DraftTableComp extends React.Component {
                 {
                     Header: "Number",
                     id: "number",
-                    maxWidth: 100,
+                    maxWidth: 95,
                     accessor: d => d.number_num,
                     filterMethod: (filter, rows) =>
                         matchSorter(rows, filter.value, { keys: ["number"] }),
@@ -72,7 +72,7 @@ class DraftTableComp extends React.Component {
                 {
                     Header: "Position",
                     id: "player_pos",
-                    maxWidth: 200,
+                    maxWidth: 150,
                     accessor: d => d.player_pos,
                     filterMethod: (filter, rows) =>
                         matchSorter(rows, filter.value, { keys: ["player_pos"] }),
@@ -81,7 +81,7 @@ class DraftTableComp extends React.Component {
               ]
             }
           ]}
-          defaultPageSize={20}
+          defaultPageSize={10}
           style={{
             // height: "70vh"
           }}
